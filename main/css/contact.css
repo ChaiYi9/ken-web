@@ -1,0 +1,51 @@
+.top{
+    height: 200px;
+    width: 100vw;
+}
+.conbody{
+    /* position: relative; */
+    top: 150px;
+    width: 800px;
+    margin: auto;
+}
+.conbody #ourlocation{
+    text-align: center;
+    font-size: 40px;
+    font-family:Centaur;
+}
+#johor{
+    color: #000;
+}
+.conbody .float{
+    float: left;
+    margin-top: 60px;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+    margin-bottom: 40px ;
+    
+}
+.conbody .float p{
+    color: rgb(85, 85, 85);
+    
+}
+
+.conbody .left{
+    width: 290px;
+    height: 450px;
+    /* background-color: red; */
+    margin-right: 20px;
+}
+.conbody .right{
+    width: 470px;
+    height: 450px;
+    /* background-color: blue; */
+    margin-left: 20px;
+}
+@media screen and (max-width:850px){
+    .conbody{
+        width: 600px;
+    }
+    .conbody .left{
+        height: 250px;
+    }
+}

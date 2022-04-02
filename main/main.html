@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <ul>
+            <li class="wedding pointer">wedding invitation
+                <div class="libox">
+                    <div class="lileft lili">
+                        <br>
+                        <h2>&nbsp; The New Collection</h2>
+                        <ul>
+                            <li class="pointer">Boading Pass</li>
+                            <li class="pointer">Classic</li>
+                            <li class="pointer">Photo</li>
+                            <li class="pointer">Orient</li>
+                            <li class="pointer">E-invitation</li>
+                            <li class="pointer">Laser Cut</li>
+                        </ul>
+                        <!-- <p>Boading Pass</p>
+                        <p>Classic</p>
+                        <p>Photo</p>
+                        <p>Orient</p>
+                        <p>E-invitation</p>
+                        <p>laser Cut</p> -->
+                    </div>
+                    <div class="liright lili">
+                        <div></div>
+                        <!-- <img src="img/boading.png" alt=""> -->
+                        <img src="img/CLASSIC.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="pointer">about</li>
+            <li class="pointer">contact</li>
+        </ul>
+    </div>
+    <div class="banner">
+        <img src="img/banner.png" alt="">
+    </div>
+    <div class="body">
+        <p> NEW COLLECTION</p>
+        <p id="newdown">the best invitation card in 2022</p>
+        <div class="selectbox">
+            <div class="fbox">
+                <div class="bodybox fraw boadingpass pointer">
+                    <div class="bodyimg">
+                        <img src="img/boading.png" alt="">
+                    </div>
+                    <p>BOADING PASS</p>
+                </div>
+                <div class="bodybox fraw classic pointer">
+                    <div class="bodyimg">
+                        <img src="img/CLASSIC.png" alt="">
+                    </div>
+                    <p>CLASSIC</p>
+                </div>
+                <div class="bodybox fraw photo pointer">
+                    <div class="bodyimg">
+                        <img src="img/photo.png" alt="">
+                    </div>
+                    <p>PHOTO</p>
+                </div>
+            </div>
+            <div class="sbox">
+                <div class="bodybox sraw orient pointer">
+                    <div class="bodyimg">
+                        <img src="img/orient.png" alt="">
+                    </div>
+                    <p>ORIENT</p>
+                </div>
+                <div class="bodybox sraw einvitation pointer">
+                    <div class="bodyimg">
+                        <img src="img/laser.png" alt="">
+                    </div>
+                </div>
+                <div class="bodybox sraw lasercut pointer">
+                    <div class="bodyimg">
+                        <img src="img/laser.png" alt="">
+                    </div>
+                    <p>LASER CUT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="red"></div>
+</body>
+<script>
+    let nav = document.getElementById('nav')
+    document.onscroll= function(){
+        // alert(scrollY)
+        if(scrollY < 100){
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+            nav.style.boxShadow= '0px 0px 0px 0px rgba(255, 255, 255, 0)'
+        }
+        if (scrollY >= 100){
+            // alert('hi')
+            nav.style.backgroundColor = 'black'
+            nav.style.boxShadow='4px 3px 8px 2px rgb(63, 63, 63)'
+        }
+    }
+</script>
+</html>

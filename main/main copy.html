@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main copy.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <ul>
+            <li class="wedding pointer">
+            <a href="main copy.html" id="weddinga">wedding invitation</a>
+                <div class="weddingdiv">
+                    <h2>The New Collection</h2>
+                    <div class="half">
+                        <ul>
+                            <a href="boadingPass.html"><li>Boarding Pass</li></a>
+                            <a href="Classic.html"><li> Classic</li></a>
+                            <a href="Photo.html"><li>Photo</li></a>
+                            <a href="Orient.html"><li> Orient</li></a>
+                            <a href="LaserCut.html"><li>E-invitation</li></a>
+                            <a href="LaserCut.html"><li>Laser Cut</li></a>
+                        </ul>
+                    </div>
+                    <div class="half">
+                        <img src="img/boading.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="pointer">about</li>
+            <a href="contact.html"><li class="pointer">contact</li></a>
+        </ul>
+        <div class="icon pointers">
+            <img src="img/icon.png" alt="" id="topicon">
+            <div class="black">
+                <ul>
+                    <li></li>
+                    <li class="weddingli line pointers">wedding
+                        <ul>
+                            <a href="boadingPass.html"><li class="pointers">Boarding Pass</li></a>
+                            <a href="Classic.html"></a><li class="pointers">Classic</li></a>
+                            <a href="Photo.html"></a><li class="pointers">Photo</li></a>
+                            <a href="Orient.html"></a><li class="pointers">Orient</li></a>
+                            <a href="LaserCut.html"></a><li class="pointers">E-invitation</li></a>
+                            <a href="LaserCut.html"></a><li class="pointers">Laser Cut</li></a>
+                        </ul>
+                    </li>
+                    <li class="line pointers">about</li>
+                    <a href="contact.html"><li class="line pointers">contact</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div>
+            <img src="img/banner.png" alt="">
+        </div>
+    </div>
+    <div class="body">
+
+        <p id="newcollection">NEW COLLECTION</p>
+        <p id="newdown">the best invitation card in 2022</p>
+        <div class="select">
+            <ul>
+                <li>
+                    <a href="boadingPass.html">
+                        <div class="pic">
+                            <img src="img/boading.png" alt="">
+                        </div>
+                        <p>BOARDING PASS</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Classic.html">
+                        <div class="pic">
+                            <img src="img/CLASSIC.png" alt="">
+                        </div>
+                        <p>CLASSIC</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Photo.html">
+                        <div class="pic">
+                            <img src="img/photo.png" alt="">
+                        </div>
+                        <p>PHOTO</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Orient.html">
+                        <div class="pic">
+                            <img src="img/orient.png" alt="">
+                        </div>
+                        <p>ORIENT</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="LaserCut.html">
+                        <div class="pic">
+                            <img src="img/laser.png" alt="">
+                        </div>
+                        <p>E-INVITATION</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="LaserCut.html">
+                        <div class="pic">
+                            <img src="img/laser.png" alt="">
+                        </div>
+                        <p>LASER CUT</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="bottomNav">
+        <div class="bNavBox">
+            <div class="botNavLeft bfloat">
+                <p class="grey">Follow Us</p>
+                <br>
+                <a href="https://www.facebook.com/cadp8888"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSBnqBvMTrcXtRJgKdxZwMkkXkdWRXCGNRgbRrDPLWGmTbMDZqtCTWrZDmdBxKPfPRdCdjWM"><p>Email Us</p></a>
+            </div>
+            <div class="botNavMid bfloat">
+                <p class="grey">Location</p>
+                <br>
+                <p>
+                    Johor Bahru
+                    <br>
+                    <br>
+                    No.26, Jalan Anggerik 37,<br>
+                    Johor Jaya, 81100 <br>
+                    Johor Bahru, Johor
+                </p>
+            </div>
+            <div class="botNavRight bfloat">
+                <p class="grey">Working Hours</p>
+                <br>
+                <p>
+                    Opening Hour :
+                    <br>
+                    <br>
+                    Sunday to Saturdya : 9am to 7pm
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer>footer</footer> -->
+    <div class="red"></div>
+</body>
+<script>
+    let nav = document.getElementById('nav')
+    document.onscroll= function(){
+        // alert(scrollY)
+        if(scrollY < 100){
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+            nav.style.boxShadow= '0px 0px 0px 0px rgba(255, 255, 255, 0)'
+        }
+        if (scrollY >= 100){
+            // alert('hi')
+            nav.style.backgroundColor = 'black'
+            nav.style.boxShadow='4px 3px 8px 2px rgb(63, 63, 63)'
+        }
+    }
+</script>
+</html>

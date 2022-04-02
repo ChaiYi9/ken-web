@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <ul>
+            <li class="wedding pointer">
+                <a href="main copy.html" id="weddinga">wedding invitation</a>
+                <div class="weddingdiv">
+                    <h2>The New Collection</h2>
+                    <div class="half">
+                        <ul>
+                            <a href="boadingPass.html"><li>Boarding Pass</li></a>
+                            <a href="Classic.html"><li> Classic</li></a>
+                            <a href="Photo.html"><li>Photo</li></a>
+                            <a href="Orient.html"><li> Orient</li></a>
+                            <a href="LaserCut.html"><li>E-invitation</li></a>
+                            <a href="LaserCut.html"><li>Laser Cut</li></a>
+                        </ul>
+                    </div>
+                    <div class="half">
+                        <img src="img/boading.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="pointer">about</li>
+            <a href="contact.html"><li class="pointer">contact</li></a>
+        </ul>
+        <div class="icon pointers">
+            <img src="img/icon.png" alt="" id="topicon">
+            <div class="black">
+                <ul>
+                    <li></li>
+                    <li class="weddingli line pointers">wedding
+                        <ul>
+                            <a href="boadingPass.html"><li class="pointers">Boarding Pass</li></a>
+                            <a href="Classic.html"></a><li class="pointers">Classic</li></a>
+                            <a href="Photo.html"></a><li class="pointers">Photo</li></a>
+                            <a href="Orient.html"></a><li class="pointers">Orient</li></a>
+                            <a href="LaserCut.html"></a><li class="pointers">E-invitation</li></a>
+                            <a href="LaserCut.html"></a><li class="pointers">Laser Cut</li></a>
+                        </ul>
+                    </li>
+                    <li class="line pointers">about</li>
+                    <a href="contact.html"><li class="line pointers">contact</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="conbody">
+        <div class="top"></div>
+        <p id="ourlocation">OUR LOCATION</p>
+        <div class="left float">
+            <p id="johor"> Johor Bahru</p>
+            <p>No.26, Jalan Anggerik 37, <br> Johor Jaya, 81100 <br> Johor Bahru, Johor</p>
+            <br>
+            <p>Tel:+6018-3870599</p>
+            <p>Email:caprinting32@gmail.com</p>
+            <br>
+            <p>Opening Hour :</p>
+            <p>Sunday to Saturdya : 9am to 7pm</p>
+        </div>
+        <div class="right float">
+            <div>
+                
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.368705476551!2d103.8010570147543!3d1.5445448988736326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6ebc2cda5d71%3A0x93eb1c442236c301!2z5Y2w6LGh6K6-6K6h5LiO5pWw56CB5Y2w5Yi3!5e0!3m2!1szh-CN!2smy!4v1648655640517!5m2!1szh-CN!2smy" width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer class="bottomNav">
+        <div class="bNavBox">
+            <div class="botNavLeft bfloat">
+                <p class="grey">Follow Us</p>
+                <br>
+                <a href="https://www.facebook.com/cadp8888"><p>Facebook</p></a>
+                <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSBnqBvMTrcXtRJgKdxZwMkkXkdWRXCGNRgbRrDPLWGmTbMDZqtCTWrZDmdBxKPfPRdCdjWM"><p>Email Us</p></a>
+            </div>
+            <div class="botNavMid bfloat">
+                <p class="grey">Location</p>
+                <br>
+                <p>
+                    Johor Bahru
+                    <br>
+                    <br>
+                    No.26, Jalan Anggerik 37,<br>
+                    Johor Jaya, 81100 <br>
+                    Johor Bahru, Johor
+                </p>
+            </div>
+            <div class="botNavRight bfloat">
+                <p class="grey">Working Hours</p>
+                <br>
+                <p>
+                    Opening Hour :
+                    <br>
+                    <br>
+                    Sunday to Saturdya : 9am to 7pm
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    let nav = document.getElementById('nav')
+    document.onscroll= function(){
+        // alert(scrollY)
+        if(scrollY < 100){
+            nav.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+            nav.style.boxShadow= '0px 0px 0px 0px rgba(255, 255, 255, 0)'
+        }
+        if (scrollY >= 100){
+            // alert('hi')
+            nav.style.backgroundColor = 'black'
+            nav.style.boxShadow='4px 3px 8px 2px rgb(63, 63, 63)'
+        }
+    }
+</script>
+</html>

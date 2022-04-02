@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+
+}
+.pointer{
+    cursor: pointer;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.151);
+    min-height: 100%;
+    position: relative;
+}
+/*-------------------------------------------------------------------------------- nav */
+.nav{
+    width: 100%;
+    height: 86px;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(36, 36, 36, 0);
+    box-shadow: 0px;
+    z-index: 99;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.384), #ffffff00);
+}
+.icon{
+    position: absolute;
+    top: 30px;
+    right: 36px;
+    display: none;
+}
+.nav ul{
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 8vw;
+}
+.nav ul li{
+    float: left;
+    font-size: 20px;
+    height: 47px;
+    margin: 40px 28px 0px 28px;
+    color: white;
+    position: relative;
+}
+/* --------------------------------------------------------------------black */
+.black{
+    position: fixed;
+    top: 0px;
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    display: none;
+}
+.icon:hover .black{
+    /* background-color: #fff; */
+    display: block;
+}
+.black ul{
+    height: 100vw;
+    left: 0px;
+}
+.black .weddingli{
+    width: 100%;
+    height: 338px;
+}
+.weddingli ul{
+    margin-top: 20px;
+}
+.black ul li{
+    /* color: black; */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-color: red; */
+    margin: 0;
+    margin-left: 30px;
+    float: none;
+    /* border-bottom: solid rgb(255, 255, 255); */
+
+}
+.line{
+    margin-left: 600px;
+    /* border-bottom: solid rgb(255, 255, 255); */
+    border-top: solid rgb(255, 255, 255);
+}
+.pointers{
+    cursor: pointer;
+}
+.black ul li:hover{
+    color: grey;
+}
+
+/* --------------------------------------------------------------wedding's div */
+.wedding #weddinga{
+    color: white;
+}
+.weddingdiv{
+    position: absolute;
+    color: #000;
+    width: 470px;
+    height: 400px;
+    top: 47px;
+    right: -100px;
+    background-color: #fff;
+    opacity: 0.94;
+    box-shadow: 2px 0px 12px 0px rgba(116, 116, 116, 0.521);
+    display: none;
+}
+.weddingdiv ul{
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+.weddingdiv h2{
+    margin: 15px 25px;
+}
+.half{
+    width: 50%;
+    height: calc(400px - 35px - 30px);
+    float: left;
+    /* background-color: red; */
+}
+.half img{
+    width: 95%;
+}
+.weddingdiv ul li{
+    float: none;
+    color: #000;
+    margin: 15px 40px;
+    width: auto;
+    height: auto;
+}
+
+.wedding:hover .weddingdiv{
+    display: block;
+}
+.weddingdiv ul li:hover{
+    color: rgb(92, 92, 92);
+}
+/* ----------------------------------------------------------------Bottom nav */
+.bottomNav{
+    width: 100%;
+    height: 210px;
+    background-color: rgb(51, 51, 51);
+    margin-top: -210px;
+    clear: both;
+    padding-top: 30px;
+}
+.bottomNav .bNavBox{
+    height: 100%;
+    width: 53vw;
+    margin: auto;
+}
+.bottomNav .bNavBox .bfloat{
+    float: left;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bottomNav .bNavBox .bfloat p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.bottomNav .bNavBox .bfloat .grey{
+    color: gray;
+}
+.bottomNav .bNavBox .botNavLeft{
+    width: 15vw;
+    /* height: 100%; */
+    /* background-color: rgb(255, 1, 1); */
+}
+.bottomNav .bNavBox .botNavMid{
+    width: 20vw;
+    /* height: 100%; */
+    /* background-color: rgb(0, 0, 0); */
+}
+.bottomNav .bNavBox .botNavRight{
+    width: 18vw;
+    /* height: 100%; */
+    /* background-color: rgb(90, 1, 255); */
+}
+/* ------------------------------------------------------- */
+@media screen and (max-width:720px) {
+    .icon{
+        display: block;
+    }
+    .nav .pointer{
+        display: none;
+    }
+    .bottomNav{
+        height: 500px;
+    }
+    .bottomNav .bNavBox{
+        height: 100%;
+        width: 90vw;
+    }
+    .bottomNav .bNavBox .bfloat p{
+        margin-top: 1px;
+    }
+    .bottomNav .bNavBox .botNavLeft{
+        width: 50vw;
+        /* height: 100%; */
+        /* background-color: rgb(255, 1, 1); */
+    }
+    .bottomNav .bNavBox .botNavMid{
+        width: 50vw;
+        /* height: 100%; */
+        /* background-color: rgb(0, 0, 0); */
+    }
+    .bottomNav .bNavBox .botNavRight{
+        width: 50vw;
+        /* height: 100%; */
+        /* background-color: rgb(90, 1, 255); */
+    }
+    .bottomNav .bNavBox .bfloat p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 10px;
+    }
+}

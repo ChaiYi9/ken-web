@@ -1,0 +1,43 @@
+.top{
+    height: 200px;
+    width: 100vw;
+}
+.bodyx{
+    /* position:relative; */
+    height: 100vh;
+}
+.select{
+    width: 90%;
+    /* height: 100px; */
+    margin: auto;
+}
+.select ul li{
+    width: 25vw;
+    float: left;
+    height: calc(25vw + 60px);
+    background-color: red;
+    margin: 2vw;
+}
+
+@media screen and (max-width:1200px){
+    .select ul li{
+        width: 35vw;
+        height: calc(35vw + 60px);
+        margin: 3vw;
+    }
+    .select{
+        width: 84%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:710px){
+    .select ul li{
+        width: 60vw;
+        height: calc(60vw + 60px);
+        margin: 5%;
+    }
+    .select{
+        width: 70%;
+        margin: auto;
+    }
+}
